@@ -22,7 +22,7 @@ public class ResourceServerConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http.requestMatchers()
-                .antMatchers("/login","*/hello/*")
+                .antMatchers("/login","*/hello/*","/login2")
 
                 .and()
                 .authorizeRequests()
